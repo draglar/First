@@ -1,0 +1,32 @@
+section{
+    /*    background:;*/
+    text-align: center;
+    border:1px solid black;
+    border-radius: 15px;
+    padding-left:5px;
+    width:250px;
+    position: relative;
+    /*0 height:150px;*/
+}
+section:hover{
+    /* background: rgb(13, 122, 122);*/
+    transition: 4s;
+    border-radius:55px;
+    font-size:20px;
+    width: 300px;
+}
+div {
+    width: 70%;
+    display:none;
+
+}
+body{
+    background-image: linear-gradient(135deg,rgb(10, 139, 139),rgb(101, 40, 155));
+    padding:0px 25%;
+	background-repeat:none;
+}
+button{
+    background:inherit;
+    border:0px;
+}
+

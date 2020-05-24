@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Surveys</title>
+    <link rel="stylesheet" type="text/css" href="scenario.css">
+</head>
+<body onload="loaded()">
+<p style="text-align: center"><em>welcome to the Scenarios page<br>
+    just go with the flow of questions and try to answer honestly</em>
+</p>
+<button onclick="one_x()">1:one</button>
+<button onclick="two_x()">two</button>
+<div id="one">
+    <p>A childhood crush of your's approaches you out of the blues when you hit rock bottom.
+        She gives you a life story:she has approximately 2 years left to live due to an incurable brain tumor.<br>
+        She tells you of how much she has always loved and want you to fulfill her dying wish:she wants to be married to you
+        and wants a child with you.<br>
+        Further,she says if you think taking care of the kid could overwhelm your pockets,she assures you her family wealth will
+        be more than enough to last a lifetime so you,don't worry about it.
+    </p>
+    <h5>What would you do¿-¿</h5>
+    <section onclick="choice()">Accept</section>
+    <section onclick="choice()">Refuse</section>
+    <section onclick="choice()">Other please explain:
+    </section><textarea rows="10" cols="70" id="one-othr"></textarea>
+</div>
+
+<div id="two">
+    <p>A childhood crush of your's approaches you out of the blues when you hit rock bottom.
+        She gives you a life story:she has approximately 2 years left to live due to an incurable brain tumor.<br>
+        She tells you of how much she has always loved and want you to fulfill her dying wish:she wants to be married to you
+        and wants a child with you.<br>
+    </p>
+    <h1>What would you do¿-¿</h1>
+    <section onclick="choice()">Accept</section>
+    <section onclick="choice()">Refuse</section>
+    <section onclick="choice()">Other please explain:
+    </section><textarea rows="10" cols="70" id="one-othr"></textarea>
+</div>
+<script src="scenario.js"></script>
+</body>
+</html>
