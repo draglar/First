@@ -1,15 +1,160 @@
 <!Doctype html>
 <html>
 
-<body onload='songs'>
-<script>
-function songs(){
-	document.createElement(element);
-	element.appendChild(Songs);
-}
-function find(){
+<head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <style>
+        /*  video{
+              z-index: -1;
+              position: initial;
 
-}
-</script>
+          }
+        /*.overlay{
+              background-blend-mode: color-dodge;
+              text-align:center;
+              color:white;
+              padding-top:15%;
+              position:absolute;
+              z-index:99;
+              background:rgba(0,5,0,.64);
+              width:100%;
+              height:;
+          }*/
+        button,
+        input {
+            background-color;
+            border: 2px black;
+            border-radius: 55px;
+            height: 30px;
+        }
+
+        #sng_tst {
+            width: 60%;
+        }
+
+        input {
+            width: 50%;
+            height: 50px;
+            font-size: 30px;
+            padding-left: 50px;
+        }
+
+        p {
+            font-size: 40px;
+        }
+
+        body {
+            background: #ffffff url("vlcsnap-2020-03-02-12h37m05s976.png") no-repeat;
+            background-size: cover;
+            text-align: center;
+        }
+
+        div {
+            position: center;
+        }
+
+        img {
+            z-index: -1;
+            float: inside;
+        }
+
+        input {
+            text-align: center;
+
+        }
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        .active {
+            background-color: #4CAF50;
+        }
+    </style>
+</head>
+
+<body style="font-family:'Comic Sans MS', cursive, sans-serif" onload="songs()">
+    <?php
+echo 'my first script'
+?>
+    <ul>
+        <li><a class="active" href="main.html">Home</a></li>
+        <li><a href="">sites:</a></li>
+        <!--<div class="dropdown">
+        <div class="dropdown-content">
+          <p>Hello World!</p>
+          <p>Hello World!</p>
+          <p>Hello World!</p>
+          <p>Hello World!</p>
+        </div>
+    </div>-->
+        <li><a href="Elements.html">songs</a></li>
+        <li><a href="scenareo.html">scenareos</a></li>
+        <li style="float: right;"><a href="#contact">Contact</a></li>
+        <li style="float: right;"><a href="#about">About</a></li>
+    </ul>
+    <section style="padding:20px;margin-top:30px;">
+        <!--<a href="index.html" style="position:sticky;float:left;text-decoration:none ;color:rgb(1, 15, 1)">Home</a>-->
+        <button onclick="all_songs()">songs list</button>
+        <div id="sngs" style="color: ActiveBorder"></div>
+
+        <div id="dv">
+            <input type="text" id="usrs"><br><br>
+            <button onclick="chang()">change</button>
+            <p id="sng_nm" style="color: ActiveBorder"></p>
+            <audio controls id="sng_tst" autoplay style="z-index: 0">
+                <source src="" type="audio/ogg">
+                <source src="" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio><br>
+            <button onclick="rndm()">Random</button>
+        </div>
+        <!--
+<video width='100%' height='100%'  muted loop autoplay style="z-index: -1" id='vida'>
+   source src="C:\Users\Eyan\Downloads\Video\YouTube.mp4" type="video/mp4">
+   width="100%" height="720vp"
+
+	<source src='C:\Users\Eyan\Downloads\Video\Best Of 2019 Mix ♫♫ Gaming Music ♫ Trap x House x Dubstep x EDM - YouTube.mkv' type="video/ogg">
+    <source src="C:\Users\Eyan\Downloads\Video\YouTube.mkv" type="video/ogg">
+	
+    Your browser does not support HTML5 video.
+</video>
+-->
+        <script src="songs.js">
+
+            /*<button onclick="chang()">Change</button>
+        function songs(){
+            document.createElement(element);
+            element.appendChild(Songs);
+        }
+        function find(){
+        
+        }*/
+        </script>
+    </section>
 </body>
+
 </html>

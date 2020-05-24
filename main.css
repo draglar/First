@@ -8,6 +8,8 @@
 }
 body{
     background: linear-gradient(to bottom right,rgb(10, 139, 139),rgb(101, 40, 155));
+    font-size: larger;
+    text-align: center;
 }
 #intro{
 /*    background:;*/
@@ -17,6 +19,7 @@ border:1px solid black;
     padding-left:5px;
     width:250px;
     position: relative;
+    width: 100%;
    /*0 height:150px;*/
 }
 #intro:hover{
@@ -25,8 +28,12 @@ border:1px solid black;
     border-radius:55px;
     font-size:20px;
     width: 300px;
+    width: 100%;
 }
 a{
   text-decoration: none;
   color:red;
+}
+
+#elem:hover{
 }
