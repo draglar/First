@@ -1,0 +1,135 @@
+<!Doctype html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="ul.css">
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <style>
+        /*  video{
+              z-index: -1;
+              position: initial;
+
+          }
+        /*.overlay{
+              background-blend-mode: color-dodge;
+              text-align:center;
+              color:white;
+              padding-top:15%;
+              position:absolute;
+              z-index:99;
+              background:rgba(0,5,0,.64);
+              width:100%;
+              height:;
+          }*/
+        button,input{
+			/*background-color:;*/
+			border:2px black;
+			border-radius:55px;
+			height:30px;
+        }
+		#sng_tst{
+			width:60%;	
+		}
+		input{
+			width:50%;	
+			height:50px;
+			font-size:30px;
+			padding-left:30px;
+		}
+		p{
+			font-size:40px;
+		}
+        body{
+            background:#ffffff url("vlcsnap-2020-03-02-12h37m05s976.png") no-repeat;
+            background-size: cover;
+            text-align: center;
+            padding-top: 10px;
+        }
+        div{
+            position: center;
+        }
+        img{
+            z-index: -1;
+            float: inside;
+        }
+        input{
+            text-align: center;
+        }
+        section{
+            text-align: center;
+        }
+    </style>
+</head>
+<body onload="songs()" style="font-family:'Comic Sans MS', cursive, sans-serif;">
+<?php
+echo my first script
+?>
+<ul>
+    <li><a  href="index.html">Home</a></li>
+    <li><a>sites:</a></li>
+    <!--<div class="dropdown">
+            <div class="dropdown-content">
+              <p>Hello World!</p>
+              <p>Hello World!</p>
+              <p>Hello World!</p>
+              <p>Hello World!</p>
+            </div>
+        </div>-->
+    <li><a class="active" href="Elements.html">songs</a></li>
+    <li><a href="scenareo.html">scenareos</a></li>
+    <li style="float: right;"><a href="login.html">login</a></li>
+    <li style="float: right;"><a href="#contact">Contact</a></li>
+    <li style="float: right;"><a href="#about">About</a></li>
+
+</ul>
+<button onclick="all_songs()">songs list</button>
+<section style="float: left;height: available">
+    <pre>
+    breakeven
+    champion
+    clarity
+    fireflies
+    hero
+    i'll_be_waiting
+    long_live_this_love
+    inferno
+    </pre>
+</section>
+<section>
+<div id="sngs" style="color: ActiveBorder"></div>
+<br>
+<div id="dv">
+    <input type="text" id="usrs"><br><br>
+    <button onclick="chang()" >change</button>
+    <p id="sng_nm" style="color: ActiveBorder"></p>
+    <audio controls id="sng_tst" autoplay style="z-index: 0" >
+        <source src="" type="audio/ogg">
+        <source src="" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio><br>
+    <button onclick="rndm()">Random</button>
+</div>
+</section>
+<!--
+<video width='100%' height='100%'  muted loop autoplay style="z-index: -1" id='vida'>
+   source src="C:\Users\Eyan\Downloads\Video\YouTube.mp4" type="video/mp4">
+   width="100%" height="720vp"
+
+	<source src='C:\Users\Eyan\Downloads\Video\Best Of 2019 Mix ♫♫ Gaming Music ♫ Trap x House x Dubstep x EDM - YouTube.mkv' type="video/ogg">
+    <source src="C:\Users\Eyan\Downloads\Video\YouTube.mkv" type="video/ogg">
+	
+    Your browser does not support HTML5 video.
+</video>
+-->
+<script src="songs.js">
+
+    /*<button onclick="chang()">Change</button>
+function songs(){
+	document.createElement(element);
+	element.appendChild(Songs);
+}
+function find(){
+
+}*/
+</script>
+</body>
+</html>
